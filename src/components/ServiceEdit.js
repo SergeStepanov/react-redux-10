@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import FormService from './FormService';
 import {
-  resetServiceField,
   replaceService,
 } from './redux/actions/actionCreators';
 
@@ -31,10 +30,8 @@ export default function ServiceEdit() {
 
   const hendleSubmit = (evt) => {
     evt.preventDefault();
-    // const data = { id: id, name: item.name, price: item.price };
 
     dispatch(replaceService(id, item.name, item.price));
-    // dispatch(resetServiceField());
   };
 
   return (
