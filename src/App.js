@@ -7,7 +7,7 @@ import Page404 from './components/Page404';
 
 function App() {
   return (
-    <div className='container'>
+    <div className='container mt-3'>
       <Routes>
         <Route path='/' element={<ServiceAdd />} />
         <Route path='/:id/edit' element={<ServiceEdit />} />

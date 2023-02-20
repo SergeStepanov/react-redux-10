@@ -10,6 +10,10 @@ const initialState = [
   { id: nanoid(), name: 'Замена дисплея', price: 25000 },
   { id: nanoid(), name: 'Замена аккумулятора', price: 4000 },
   { id: nanoid(), name: 'Замена микрофона', price: 2500 },
+  { id: nanoid(), name: 'Ремонт стекла', price: 213000 },
+  { id: nanoid(), name: 'Ремонт дисплея', price: 250030 },
+  { id: nanoid(), name: 'Ремонт аккумулятора', price: 34000 },
+  { id: nanoid(), name: 'Ремонт микрофона', price: 42500 },
 ];
 
 export default function serviceListReducer(state = initialState, action) {
